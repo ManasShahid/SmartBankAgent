@@ -154,9 +154,3 @@ MIT License
 
 **Made with ❤️ using Agentic AI principles**
 
-```
-
----
-
-Banau ye bhi?
-```
