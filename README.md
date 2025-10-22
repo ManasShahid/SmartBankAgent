@@ -1,35 +1,23 @@
-# Streaming Agent
+# AgenticBankAI
 
-A multi-agent banking system built with LangGraph.
+**A multi-layer autonomous AI agent system for banking applications.**
 
-## Setup
-
-1. Install dependencies:
-```bash
-uv sync
-```
-
-2. Set up OpenAI API key:
-   - Create a `.env` file with: `OPENAI_API_KEY=your_api_key_here`
-   - Or set the environment variable: `export OPENAI_API_KEY=your_api_key_here`
-
-3. Run the application:
-```bash
-uv run python main.py
-```
+## Overview
+AgenticBankAI demonstrates how **Agentic AI concepts** can be applied in banking:
+- Multi-layer agent architecture (Perception → Planning → Execution → QA)
+- MCP (Model Context Protocol) memory integration
+- RAG (Retrieval-Augmented Generation) for knowledge retrieval
+- A2A (Agent-to-Agent) handoff for seamless agent collaboration
+- Simulated banking APIs for account balance, loans, and transactions
 
 ## Features
+- Check account balance
+- Apply for loans (with simulated approval logic)
+- Fetch transaction history
+- RAG-based fallback for unknown queries
+- QA layer for validating responses
+- Modular and extensible for new banking tasks
 
-- Multi-agent workflow for banking queries
-- Account balance checking
-- Loan application processing
-- Transaction history retrieval
-- RAG-based knowledge retrieval
-
-## Architecture
-
-The system uses LangGraph with a state-based workflow:
-1. Query Agent - Understands customer queries
-2. Planner Agent - Determines next steps
-3. Response Agent - Generates responses using APIs and RAG
-4. QA Agent - Validates response quality
+## Installation
+```bash
+pip install langgraph langchain openai faiss-cpu
