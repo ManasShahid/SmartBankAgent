@@ -1,0 +1,4 @@
+[2025-10-21 17:32:26] [TRACE] orchestrator_start | meta: {'task': 'weather_check', 'city': 'Karachi'}
+[2025-10-21 17:32:26] [TRACE] tavily_weather_start | meta: {'city': 'Karachi'}
+[2025-10-21 17:32:27] [TRACE] tavily_weather_end | meta: {'city': 'Karachi', 'status': 400}
+[2025-10-21 17:32:27] [TRACE] orchestrator_end | meta: {'task': 'weather_check', 'status': 'no_data'}
